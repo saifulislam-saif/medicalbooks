@@ -1,0 +1,1 @@
+msiTyping('#msi', 150, 1);
