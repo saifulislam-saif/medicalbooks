@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  ul,
+  ol,
+  li,
+  span {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*  ==================== Common CSS end ==================== */
+  
+  section {
+    padding: 40px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  body {
+      background: #ef4478;
+      font-weight: normal;
+      font-family: tahoma;
+      color: #333;
+  }
+  
+  .body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .clr {
+      clear: both;
+  }
+  
+  /*  ==================== Extra Common CSS end ==================== */
+  
+  
+  /*  ===================== Menu Part Start ==================  
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+  .main_menu {
+    /*    background: rgba(53, 53, 53, 0.53);*/
+    background: rgba(0, 100, 0, 0.75) !important;
+    height: 60px;
+    z-index: 999;
+  }
+  
+  .main_menu-fixed {
+    background: rgba(0, 100, 0, 1) !important;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .main_menu .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    color: #f1f1f1;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+  }
+  
+  .main_menu .navbar-nav .nav-item.mixitup-control-active .nav-link {
+    background: #ff105f;
+  }
+  
+  .main_menu .navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background: #ff105f;
+    z-index: -1;
+  
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+  }
+  
+  .main_menu .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background: #ff105f;
+    z-index: -1;
+  
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+  }
+  
+  .dropdown_active {
+    background: #ff105f;
+    padding: 8px 10px 10px;
+    margin: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .main_menu .navbar-nav .nav-item.active .nav-link {
+    background: #ff105f;
+  }
+  
+  .main_menu .navbar-nav .nav-item .nav-link:hover::before {
+    width: 50%;
+  }
+  
+  .main_menu .navbar-nav .nav-item .nav-link:hover::after {
+    width: 50%;
+  }
+  
+  /* .search_box-wrapper {
+    max-width: 300px;
+  } */
+  
+  .search_box-wrapper .input-group-prepend .input-group-text {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  
+  .main_menu .search_box {
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+  }
+  
+  .main_menu input.search_box::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .main_menu input.search_box:focus {
+    box-shadow: none;
+    border: 1px solid #fff;
+  }
+  
+  .profile_menu a {
+    background: transparent;
+    color: #fff;
+    line-height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 20px;
+  
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+  }
+  
+  .profile_menu a:hover {
+    color: #ff105f;
+  }
+  
+  .profile_menu .profile i {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .profile_menu .profile span {
+    display: none;
+  }
+  
+  /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ===================== Menu Part End ==================   */
+  
+  
+  
+  /*  ===================== Card Part Start ==================  
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+  
+  #card_part {
+    padding-top: 80px;
+  }
+  
+  #card_part .card {
+    margin-bottom: 30px !important;
+  }
+  
+  #card_part .card_bg {
+    background: rgba(255, 16, 95, 0.75) !important;
+  }
+  
+  #card_part .my_books .card_bg {
+    background: rgba(0, 128, 0, 0.75) !important;
+  }
+  
+  
+  #card_part .my_books .card_bg .btn {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa
+  }
+  
+  #card_part .my_books .card_bg .btn:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5
+  }
+  
+  #card_part .my_books .card_bg .btn.focus,
+  #card_part .my_books .card_bg .btn:focus {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    box-shadow: 0 0 0 .2rem rgba(216, 217, 219, .5)
+  }
+  
+  #card_part .card_bg .btn {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745
+  }
+  
+  #card_part .card_bg .btn:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34
+  }
+  
+  #card_part .card_bg .btn.focus,
+  #card_part .card_bg .btn:focus {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 0 0 .2rem rgba(72, 180, 97, .5)
+  }
+  
+  #card_part .card_title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  #card_part .card_rate {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 8px 0;
+  }
+  
+  
+  
+  /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ===================== Card Part End ==================   */
+  
+  
+  
+  
+  /*  =====================  About Part Start ==================  
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+  #about {
+    color: #fff;
+  }
+  
+  /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ===================== About Part End ==================   */
+  
+  
+  
+  /*  =====================  About Part Start ==================  
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+  #contact {
+    color: #fff;
+  }
+  
+  /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ===================== About Part End ==================   */
+  
+  
+  
+  /*  =====================  Footer Part Start ==================  
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+  footer {
+    background: #212529;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer p {
+    line-height: 60px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ===================== About Part End ==================   */
+  
+  
+  
+  
+  /*  ===================== Sticky Footer Start ==================  
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page__content {
+    min-height: 100%;
+    /*Margin-bottom: - value of footer height*/
+    margin-bottom: -60px;
+  }
+  
+  .page__content::after {
+    content: "";
+    display: block;
+  }
+  
+  footer,
+  .page__content::after {
+    height: 60px;
+  }
+  
+  /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ===================== Sticky Footer End ==================   */
+  
+  
+  
+  /* ===========================================================
+  
+  ~~~~~~~~~~~~~~~~~~~~   BOOK DETAIL PAGE   ~~~~~~~~~~~~~~~~~~~~
+  
+  ============================================================== */
+  
+  body {
+    position: relative;
+  }
+  
+  .sidebar_menu {
+    top: 50px;
+    position: fixed;
+    height: calc(100% - 50px);
+    width: 24%;
+    overflow: auto;
+    z-index: 2;
+  }
+  
+  .book_body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  
+  .sidebar_body h2 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .sidebar_body {
+    background: #f1f1f1;
+  }
+  
+  /* ===========================================================
+  
+  ~~~~~~~~~~~~~~~~~~~~   Cart All PAGE   ~~~~~~~~~~~~~~~~~~~~
+  
+  ============================================================== */
+  
+  
+  .shoping_card_body {
+      width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+  }
+  
+  .shoping_card_body h2 {
+      font-family: sans-serif ;
+      display: inline-block;
+      background: white;
+      color: #ef4478;
+      font-size: 15px;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 4px 20px;
+      float: left;
+      border-radius: 50px;
+      margin-bottom: 15px;
+  }
+  
+  .shoping_card_body .items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+  }
+  
+  .shoping_card_body .item {
+      background: white;
+      margin: 0 10px 10px 0;
+      width: 23.5%;
+      padding: 10px;
+  }
+  
+  .shoping_card_body .item img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+  }
+  
+  .shoping_card_body .item h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      display: block;
+      border: 1p solid #ccc;
+      margin: 10px 0 0;
+  }
+  
+  .shoping_card_body .item p {
+      font-size: 14px;
+      text-transform: uppercase;
+      display: block;
+      color: #222;
+  }
+  
+  .shoping_card_body .item p span {
+    line-height: 24px;
+      color: #ef4478;
+  }
+  
+  .shoping_card_body .item a {
+      background: #ef4478;
+      color: #fff;
+  }
+  
+  .shoping_card_body .item button {
+      border: 1px solid #ef4478;
+      padding: 4px 14px;
+      background: #ef4478;
+      color: #fff;
+      text-transform: uppercase;
+      -webkit-flex: right;
+      -moz-flex: right;
+      -ms-flex: right;
+      -o-flex: right;
+      flex: right;
+      margin: 10px 0 0;
+      font-weight: 400;
+      cursor: pointer;
+      font-family: tahoma;
+      border-radius: 50px;
+  }
+  
+  .shoping_card_body .item button:focus {
+      outline: none !important;
+  }
+  
+  .shoping_card_body .cart__icon {
+      float: right;
+      position: relative;
+  }
+  
+  .shoping_card_body .cart__number {
+      position: absolute;
+      left: 8px;
+      top: -17px;
+      background: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #ef4478;
+      
+  }
+  
+  .shoping_card_body .shopping-cart {
+      display: inline-block;
+      background: url(../images/card.png) no-repeat 0 0;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+  

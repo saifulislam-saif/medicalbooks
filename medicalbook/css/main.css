@@ -1,0 +1,854 @@
+@font-face {
+    font-family: myFont;
+    src: url(../font/films.DENMARK.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.2;
+}
+
+.d_block {
+    display: block !important;
+}
+
+/*  ==================== Common CSS end ==================== */
+
+/* ================= Variable Start ================= */
+:root {
+    --color-0: #f1f1f1;
+    --color-1: #31c5ce;
+    --color-2: #32588b;
+    --color-3: #f75843;
+    --color-4: #008287;
+    --color-5: #0f77b7;
+    --color-6: #102083;
+    --color-7: #44ca75;
+}
+
+/* ================= Variable End ================= */
+
+/* ================= Menu Part Start ================= */
+.main_menu {
+    background: var(--color-1);
+    background: var(--color-5);
+    height: 100px;
+    z-index: 999;
+
+}
+
+.main_menu .navbar-brand {
+    position: relative;
+}
+.main_menu .navbar-brand h5 {
+    color: #fff;
+    position: absolute;
+    left: 55px;
+    bottom: -2px;
+    width: 100%;
+    font-size: 12px;
+}
+.main_menu .navbar-brand img {
+    transform: translateY(-5px);
+}
+
+.main_menu .navbar-brand .brand_text {
+    color: #fff;
+    font-family: 'myFont', sans-serif;
+    font-size: 47px;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover {
+    color: var(--color-5);
+    color: var(--color-7);
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.menu_button {
+    background: #fff;
+    background: var(--color-7);
+    color: var(--color-5);
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 2px solid var(--color-7);
+    text-transform: capitalize;
+    line-height: 32px;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.menu_button:hover {
+    background: var(--color-5);
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+/* ================= Menu Part End ================= */
+
+
+/* ================= Header Part Start ================= */
+#header_part {
+    padding-top: 10px;
+    background: var(--color-1);
+    background: var(--color-5);
+}
+
+#header_part h1 {
+    text-align: center;
+    font-family: 'myFont', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    padding: 40px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+/* ================= Header Part End ================= */
+
+
+/* ================= Banner Part Start ================= */
+#banner_part {
+    margin-top: 100px;
+    background: var(--color-2);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.banner_text h3 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 160px;
+}
+
+.banner_text a {
+    color: #fff;
+    font-size: 42px;
+    line-height: 80px;
+    font-weight: 600;
+    padding: 0 30px;
+    border-radius: 30px;
+    background: var(--color-7);
+    border: 3px solid var(--color-7);
+    text-transform: uppercase;
+}
+
+.banner_text a span {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.banner_text a:hover {
+    background: transparent;
+    color: var(--color-7);
+}
+
+#banner_part iframe {
+    width: 100%;
+    height: 320px;
+}
+
+/* ================= Banner Part End ================= */
+
+
+/* ================= Course Part Start ================= */
+#course_part {
+    padding: 0 0 30px;
+    background: var(--color-0);
+}
+
+#course_part h2 {
+    color: var(--color-2);
+    color: #222;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 160px;
+    margin-bottom: -30px;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+#course_part .item-1 .card {
+    background: var(--color-6);
+}
+
+#course_part .item-2 .card {
+    background: var(--color-2);
+}
+
+#course_part .item-3 .card {
+    background: var(--color-3);
+}
+
+#course_part .item-4 .card {
+    background: var(--color-4);
+}
+
+#course_part .item-5 .card {
+    background: var(--color-5);
+}
+
+#course_part .item h5 {
+    font-size: 26px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#course_part .item h6 {
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+    text-align: left;
+}
+
+#course_part .item p {
+    font-size: 22px;
+    color: #ffffff40;
+    line-height: 60px;
+    text-align: left;
+
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+#course_part .item p i {
+    float: right;
+    line-height: 60px;
+}
+
+#course_part .item .card:hover p {
+    color: #fff;
+}
+
+/* ================= Course Part End ================= */
+
+
+/* ================= Counter Part Start ================= */
+#counter_part {
+    background: var(--color-2);
+    padding: 20px 0;
+}
+
+.student_counter > h5 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.student_counter p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+/* ================= Counter Part End ================= */
+
+
+/* ================= Schedule Part Start ================= */
+#schedule_part {
+    background: #fff;
+    padding: 30px 0;
+    text-align: center;
+    background: var(--color-0);
+}
+
+#schedule_part h2 {
+    color: var(--color-2);
+    font-size: 46px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 160px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#schedule_part > a {
+    color: #fff;
+    font-size: 42px;
+    line-height: 80px;
+    font-weight: 600;
+    padding: 0 30px;
+    border-radius: 30px;
+    background: var(--color-7);
+    border: 3px solid var(--color-7);
+    text-transform: uppercase;
+}
+
+#schedule_part a span {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+#schedule_part a:hover {
+    background: transparent;
+    color: var(--color-7);
+}
+
+.schedule_btn {
+    margin: 30px 0;
+}
+
+.schedule_btn button {
+    padding: 0 10px;
+    min-width: 140px;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.schedule_btn button:hover {
+    background: #fff;
+}
+
+.schedule_btn .btn-1 {
+    border: 2px solid var(--color-7);
+    background: var(--color-7);
+}
+
+.schedule_btn .btn-1:hover {
+    color: var(--color-7);
+}
+
+.schedule_btn .btn-2 {
+    border: 2px solid var(--color-2);
+    background: var(--color-2);
+}
+
+.schedule_box .residency td:first-child,
+.schedule_btn .btn-2:hover {
+    color: var(--color-2);
+}
+
+.schedule_btn .btn-3 {
+    border: 2px solid var(--color-3);
+    background: var(--color-3);
+}
+
+.schedule_box .fcps-part-1 td:first-child,
+.schedule_btn .btn-3:hover {
+    color: var(--color-3);
+}
+
+.schedule_btn .btn-4 {
+    border: 2px solid var(--color-4);
+    background: var(--color-4);
+}
+
+.schedule_box .fcps-part-2 td:first-child,
+.schedule_btn .btn-4:hover {
+    color: var(--color-4);
+}
+
+.schedule_btn .btn-5 {
+    border: 2px solid var(--color-5);
+    background: var(--color-5);
+}
+
+.schedule_box .bcs td:first-child,
+.schedule_btn .btn-5:hover {
+    color: var(--color-5);
+}
+
+.schedule_btn .btn-6 {
+    border: 2px solid var(--color-6);
+    background: var(--color-6);
+}
+
+.schedule_box .diploma td:first-child,
+.schedule_btn .btn-6:hover {
+    color: var(--color-6);
+}
+
+.schedule_box table {
+    margin-bottom: 0;
+}
+
+.schedule_box {
+    overflow: auto;
+    height: 310px;
+}
+
+.schedule_box tr td {
+    font-weight: 600;
+    line-height: 50px;
+    min-width: 125px;
+    padding: 0;
+}
+
+/* ================= Schedule Part End ================= */
+
+
+/* ================= Testimonial Part Start ================= */
+#testimonial_part {
+    background: var(--color-2);
+    padding: 30px 0;
+}
+
+#testimonial_part .header h2 {
+    font-size: 4rem;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+#testimonial_part .card {
+    background: var(--color-2);
+    border: 1px solid #ffffff10;
+    border-radius: 10px;
+}
+
+#testimonial_part .card p {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#testimonial_part .card h5 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+#testimonial_part .card h6 {
+    color: #c1c1c1;
+    font-size: 20px;
+}
+
+.testimonial_slider {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.testimonial_slider .item .img {
+    width: 20%;
+    margin-right: auto;
+    clip-path: circle(50%);
+    margin-bottom: 15px;
+}
+
+.testimonial_slider ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.testimonial_slider ul.slick-dots li button {
+    font-size: 0;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    outline: 0;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.testimonial_slider ul.slick-dots li button:hover {
+    background: #c1c1c1;
+}
+
+.testimonial_slider ul.slick-dots li.slick-active button {
+    background: #fff;
+}
+
+/* ================= Testimonial Part End ================= */
+
+
+/* ================= FAQ Part Start ================= */
+#faq_part {
+    background: var(--color-5);
+    padding: 30px 0;
+}
+
+#faq_part .header h2 {
+    font-size: 4rem;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.faq_body {
+    overflow: auto;
+    height: 430px;
+}
+
+.faq_body .card {
+    background: transparent;
+    border: 1px solid #ffffff40;
+    border-bottom: 1px solid #ffffff20;
+}
+
+.faq_body .card .card-header {
+    background: transparent;
+    padding: 5px 15px;
+    border: 0;
+}
+
+.faq_body .card .card-body {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid #ffffff20;
+}
+
+.faq_body .card .card-header a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    display: block;
+}
+
+.faq_body .card .card-body a {
+    color: #4f4;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.faq_body .card .card-body ul li,
+.faq_body .card .card-body p {
+    color: #f0f0f0;
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 30px 5px 60px;
+    text-align: justify;
+    position: relative;
+}
+
+.faq_body .card .card-body p::after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* ================= FAQ Part End ================= */
+
+
+/* ================= Menu Part Start ================= */
+
+/* ================= Menu Part End ================= */
+
+
+/* ================= Footer Part Start ================= */
+footer {
+    background: var(--color-2);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .social_link a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 22px;
+    margin: 0 5px;
+
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+footer .social_link a i:hover {
+    color: var(--color-3);
+    background: #fff;
+}
+
+footer p {
+    line-height: 60px;
+    color: #fff;
+}
+
+footer p a {
+    color: var(--color-7);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: var(--color-7);
+}
+
+/* ================= Footer Part End ================= */
+
+
+
+/* ================= Footer Part End ================= */
+
+#log_part {
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+#log_part .form-box {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#log_part .button-box {
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px 5px #44ca751f;
+    box-shadow: 0 0 10px 5px #44ca751f;
+    border-radius: 30px;
+}
+
+#log_part .toggle-btn {
+    padding: 5px 20px 5px 35px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#log_part #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #ffad06;
+    background: #ff105f;
+    background: var(--color-7);
+    border-radius: 30px;
+
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#log_part .input-group {
+    top: 100px;
+    position: absolute;
+    width: 288px;
+
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#log_part #register.input-group {
+    top: 75px;
+}
+
+#log_part select.input-field {
+    color: #222;
+    font-size: 16px;
+}
+#log_part .input-field {
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+#log_part #register .input-field {
+    padding: 7px 0;
+}
+
+#log_part .submit-btn {
+    width: 85%;
+    padding: 7px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #ffad06;
+    background: #ff105f;
+    background: var(--color-7);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+#log_part .check-box {
+    margin: 30px 10px 0 0;
+}
+
+#log_part span {
+    color: #777;
+    font-size: 12px;
+    margin: 30px 10px 0 0;
+}
+
+#log_part .forgot_text {
+    margin: 30px auto;
+    display: block;
+    text-align: right;
+    color: #777;
+    font-size: 12px;
+    width: 100%;
+}
+
+#log_part #login {
+    left: 50px;
+}
+
+#log_part #register {
+    left: 450px;
+}
+
+#log_part .field-icon {
+    float: right;
+    font-size: 20px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    color: #777;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    #log_part .form-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #log_part .form-box {
+        width: 360px;
+        margin-bottom: 30px;
+    }
+
+    #log_part .submit-btn {
+        padding: 7px 20px;
+        width: 70%;
+    }
+
+    #log_part .input-group {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #log_part .form-box {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
+
+    #log_part .submit-btn {
+        padding: 7px 10px;
+        width: 50%;
+    }
+
+    #log_part .input-group {
+        width: 268px;
+        margin-left: -20px;
+    }
+}
+
+/* ================= Footer Part End ================= */
