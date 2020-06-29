@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
+    <meta name="description" content="MedicalBooks is best online medical platform of Bangladesh" />
+    <meta name="keywords" content="Medical, Books, Online, FCPS, BCPS, Last Hour" />
+    <meta name="author" content="GENESIS" />
+
+    <!-- Refresh -->
+    <meta http-equiv="refresh" content="1800" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+    <!-- venobox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.css">
+
+    <!-- Others css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noty/lib/noty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noty/lib/themes/relax.css">
+
+    <link rel="stylesheet" href="sidebar-css-js/css/metismenujs.css" />
+    <link rel="stylesheet" href="sidebar-css-js/css/app.css" />
+    <link rel="stylesheet" href="sidebar-css-js/css/mm-vertical.css" />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Custom CSS for responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- icon -->
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16" />
+
+    <title>MedicalBooksOnline.Net</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header id="menu_part">
+        <nav class="navbar main_menu main_menu-fixed navbar-expand-lg p-0">
+            <div class="container px-0">
+                <a class="navbar-brand" href="#">
+                    <img class="" src="images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto m-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Books <span>(5)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!--User Part-->
+                    <div class="ml-auto user__part">
+                        <div class="profile_menu">
+                            <a class="profile" href="#">
+                                <i class="fa fa-user-circle"></i> <span>Profile</span>
+                            </a>
+                            <a class="log__out" href="" title="Sign Out" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log Out</a>
+                            <form id="logout-form" action="welcome.html" method="POST" style="display: none;">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart_button">
+                        <a class="nav-link cart_button " href="#">
+                            <span>10</span>
+                            <img src="images/card.png" alt="cart">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <!-- =================== Books Card Start =================== -->
+    <section id="card_part">
+        <div class="container card_body_mobile px-0">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mix">
+                    <div class="card card_bg" style="width: 100%">
+                        <div class="img">
+                            <img class="card-img-top img-fluid w-100" src="images/book-1.jpg">
+                            <div class="overly">
+                                <button type="button" class="border-0" data-toggle="modal" data-target="#exampleModalLong-book-id">
+                                    <i class="fa fa-book"></i>
+                                </button>
+                            </div>
+
+                            <!-- ========== Read Some of Book ========== -->
+
+                            <div class="modal fade bd-example-modal-lg" style="z-index: 10000;" id="exampleModalLong-book-id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLongTitle">Last Hour</h3>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <h4>Lorem ipsum dolor</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                                                tenetur tempore quia, molestiae aliquid pariatur obcaecati
+                                                accusamus aperiam sunt quis dolore est porro enim saepe ullam,
+                                                sint eligendi. Excepturi harum, assumenda eum sint enim placeat.
+                                            </p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <a target="_blank" href="book.html" class="btn">Read Now</a>
+                                            <a href="#" class="btn">Pay Now</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card-body mb-2 mx-2 p-0 py-2 text-center">
+                            <h5 class="card_title">Last Hour</h5>
+
+                            <script>
+                                var countDownDate = new Date("Jun 1, 2021 15:37:25").getTime();
+
+                            </script>
+
+                            <p class="card_rate">Available for <span>365</span> days</p>
+
+                            <a target="_blank" href="" class="btn" data-toggle="modal" data-target="#exampleLecture-book-id">Subscribe</a>
+
+                            <div class="modal fade" style="z-index: 10000;" id="exampleLecture-book-id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">
+                                                Reading Option:</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body py-0" style="background: #00000005">
+
+                                            <ul class="" style="background: transparent;">
+                                                <li class="d-flex justify-content-between border-bottom py-1">
+                                                    <h6>With Code</h6>
+                                                    <input type="text" name="coupon_code">
+                                                    <a href="book.html" type="submit" class="btn bg-primary text-white">Submit Code</a>
+                                                </li>
+                                                <p class="text-light bg-danger unsuccess"></p>
+                                                <li class="d-flex justify-content-between border-bottom py-1">
+                                                    <h6>Subscribe for Reading</h6>
+                                                    <a href="#" class="btn bg-primary text-white">Subscribe</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="btn">Add to Cart</a>
+                            <p class="card_rate"><span>700</span> BDT Per Year</p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- =================== Books Card End =================== -->
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="mt-auto">
+        <p class="text-center">Copyright &copy; 2020
+            <a class="btn-link" href="home.html">MedicalBooksOnline.Net</a>
+        </p>
+    </footer>
+    
+    
+    
+    
+    <!-- Popper and Bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- jQuery plugins -->
+    <script src="https://buttons.github.io/buttons.js"></script>
+    <script src="sidebar-css-js/js/prism.min.js"></script>
+    <script src="sidebar-css-js/js/noty.min.js"></script>
+
+    <script src="sidebar-css-js/js/metismenujs.js"></script>
+    <script src="sidebar-css-js/js/mm-vertical.js"></script>
+
+    <!-- venobox -->
+    <script src="js/venobox.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
