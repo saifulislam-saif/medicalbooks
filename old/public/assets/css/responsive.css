@@ -1,0 +1,433 @@
+/*  ==================== Variable Start ===================== */
+:root {
+    --color_main: #1c5aeb;
+    --color_sub: #028fcc;
+    --hover_main: #0272a3;
+    --hover_extra: #bf003f;
+    --bg_color: #f1f1f1;
+    --color_white: white;
+    --text_color: #353535;
+    --text_color-dark: #222222;
+    --card_bg-1: #0028c7;
+    --card_bg-2: #1c5aeb;
+    --bg_dark: #212529;
+    --sidebar_body: #bbbbbb;
+    --sidebar_item: #b0b0b0;
+    --sidebar_hover: #888888;
+}
+
+/*  ==================== Variable End ===================== */
+
+
+
+/* ====================================================
+
+~~~~~~~~~~~~~~~~~~~~   HOME PAGE   ~~~~~~~~~~~~~~~~~~~~
+
+======================================================= */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .user__part {
+        width: 400px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .search_box-wrapper {
+        min-width: 200px;
+    }
+
+    .profile_menu {
+        width: 150px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .profile_menu .profile i {
+        padding-left: 10px;
+    }
+
+    .main_menu .profile_menu a {
+        padding-left: 5px;
+    }
+
+    .user__part {
+        width: 360px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .search_box-wrapper {
+        min-width: 200px;
+        max-width: 250px;
+    }
+
+    .profile_menu {
+        width: 120px;
+        margin-right: 15px;
+    }
+
+    .main_menu .navbar-nav {
+        width: 400px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main_menu {
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .main_menu .navbar-collapse {
+        background: var(--color_sub);
+        text-align: center;
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .main_menu button.navbar-toggler {
+        outline: 0;
+    }
+
+    .main_menu .navbar-toggler i {
+        color: var(--color_white);
+    }
+
+    .search_box-wrapper {
+        margin: 0 auto;
+    }
+
+    .search_box-wrapper .input-group {
+        margin: 0 auto;
+    }
+
+    .profile_menu .profile i {
+        padding-left: 0;
+    }
+
+    .main_menu .profile_menu a {
+        text-align: center;
+        padding-left: 0;
+        display: block;
+        line-height: 40px;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        line-height: 40px;
+    }
+
+    .main_menu .navbar-nav .nav-item:not(:last-child) {
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .profile_menu .profile span {
+        display: inline-block;
+        line-height: 35px;
+        font-weight: 400;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up to 767) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .main_menu {
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .main_menu .navbar-collapse {
+        background: var(--color_sub);
+        text-align: center;
+        border-bottom: 1px solid #ffffff40
+    }
+
+    .main_menu button.navbar-toggler {
+        outline: 0;
+    }
+
+    .main_menu .navbar-toggler i {
+        color: var(--color_white);
+    }
+
+    .search_box-wrapper {
+        margin: 0 auto;
+        max-width: 420px;
+        padding: 0 30px;
+    }
+
+    .search_box-wrapper .input-group {
+        width: 100%;
+    }
+
+    .profile_menu .profile i {
+        padding-left: 0;
+    }
+
+    .main_menu .profile_menu a {
+        text-align: center;
+        padding-left: 0;
+        display: block;
+        line-height: 35px;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        line-height: 35px;
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .profile_menu .profile span {
+        display: inline-block;
+        line-height: 35px;
+        font-weight: 400;
+    }
+
+}
+
+/* Extra small devices (phones, 575px and down) */
+@media (max-width: 575px) {
+
+    /* section {
+        padding: 30px 0;
+    } */
+
+    .main_menu {
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .main_menu .navbar-collapse {
+        background: var(--color_sub);
+        text-align: center;
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .main_menu .navbar-brand {
+        margin-left: 5%;
+    }
+
+    .main_menu button.navbar-toggler {
+        outline: 0;
+        padding-right: 5%;
+    }
+
+    .main_menu .navbar-toggler i {
+        color: var(--color_white);
+    }
+
+    .search_box-wrapper {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 0 30px;
+    }
+
+    .profile_menu .profile i {
+        padding-left: 0;
+    }
+
+    .main_menu .profile_menu a {
+        text-align: center;
+        padding-left: 0;
+        display: block;
+        line-height: 35px;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        line-height: 35px;
+        border-bottom: 1px solid #ffffff40;
+    }
+
+    .profile_menu .profile span {
+        display: inline-block;
+        line-height: 35px;
+        font-weight: 400;
+    }
+
+    .card_body_mobile {
+        padding: 0 5% !important;
+    }
+
+}
+
+
+
+
+
+
+/* ===========================================================
+
+~~~~~~~~~~~~~~~~~~~~   BOOK DETAIL PAGE   ~~~~~~~~~~~~~~~~~~~~
+
+============================================================== */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .sidebar__controller {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .sidebar__controller {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidebar_menu {
+        width: 30%;
+    }
+
+    .sidebar__controller {
+        display: none;
+    }
+
+    .main_menu button.navbar-toggler {
+        border: 0;
+        padding: 0;
+        margin-right: 5%;
+    }
+
+    .main_menu button.navbar-toggler i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up to 767) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .sidebar_menu {
+        top: 50px;
+        left: 0;
+        position: fixed;
+        height: calc(100% - 50px);
+        width: 100%;
+        max-width: 575px;
+        overflow: auto;
+        Z-index: 2;
+        display: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .sidebar__controller i {
+        color: var(--color_main);
+        cursor: pointer;
+        position: fixed;
+        left: -18px;
+        top: 40px;
+        z-index: 100;
+        font-size: 50px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .rotation {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .main_menu button.navbar-toggler {
+        border: 0;
+        padding: 0;
+        margin-right: 5%;
+    }
+
+    .main_menu button.navbar-toggler i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/* Extra small devices (phones, 575px and down) */
+@media (max-width: 575px) {
+    .sidebar_menu {
+        top: 50px;
+        left: 0;
+        position: fixed;
+        height: calc(100% - 50px);
+        width: 100%;
+        overflow: auto;
+        Z-index: 2;
+        display: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .sidebar__controller i {
+        color: var(--color_main);
+        cursor: pointer;
+        position: fixed;
+        left: -18px;
+        top: 40px;
+        z-index: 100;
+        font-size: 50px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .rotation {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .main_menu button.navbar-toggler {
+        border: 0;
+        padding: 0;
+        margin-right: 5%;
+    }
+
+    .main_menu button.navbar-toggler i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+/* ==============================================
+~~~~~~~~~~~~~~~~~~~    Demo    ~~~~~~~~~~~~~~~~~~
+================================================= */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and up to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Medium devices (landscape tablets, 768px and up to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Small devices (portrait tablets and large phones, 576px and up to 767) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Extra small devices (phones, 575px and down) */
+@media (max-width: 575px) {}
