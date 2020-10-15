@@ -20,7 +20,7 @@
                 <a href="index.html" class=" col-lg-2 col-md-3 col-4 pt-sm-2 pt-3">
                     <img class="w-100" src="images/logo.png" alt="MedicalBooksOnline">
                 </a>
-<!--
+                <!--
                 <div class="col-xxl-6 col-lg-5 col-md-3 pt-4 col-1 search-box">
                     <form class="form-inline active-purple-3 active-purple-4">
                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -74,7 +74,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                           <i class="fa fa-industry"></i>
+                            <i class="fa fa-industry"></i>
                             About
                         </a>
                     </li>
@@ -915,6 +915,7 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 3000,
+                dots: true,
                 responsive: [{
                         breakpoint: 1201,
                         settings: {
@@ -925,22 +926,31 @@
                         breakpoint: 992,
                         settings: {
                             slidesToShow: 3,
+                            arrows: false,
+                            dots: true,
                         }
                     },
                     {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
+                            arrows: false,
+                            dots: true,
                         }
                     },
                     {
                         breakpoint: 576,
                         settings: {
                             slidesToShow: 1,
+                            arrows: false,
+                            dots: true,
                         }
                     }
                 ]
             });
         });
+
     </script>
-</body></html>
+</body>
+
+</html>

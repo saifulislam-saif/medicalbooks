@@ -148,7 +148,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -40px;
 
     display: block;
 
@@ -166,9 +166,10 @@
 
     display: inline-block;
 
-    width: 20px;
+    width: 10px;
     height: 20px;
     margin: 0 5px;
+    margin: 0;
     padding: 0;
 
     cursor: pointer;
@@ -180,7 +181,7 @@
 
     display: block;
 
-    width: 20px;
+    width: 5px;
     height: 20px;
     padding: 5px;
 
@@ -211,10 +212,10 @@
     top: 0;
     left: 0;
 
-    width: 20px;
+    width: 5px;
     height: 20px;
 
-    content: '•';
+    content: '\2605';
     text-align: center;
 
     opacity: .25;
