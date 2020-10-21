@@ -154,10 +154,6 @@ button {
 /*    border-radius: 5px;*/
 }
 
-#product_details .img {
-    
-}
-
 #product_section .box .img,
 #lecture_sheet_section .box .img,
 #book_section .box .img {
@@ -481,4 +477,50 @@ footer .payment_method span {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.product_details .img {
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px 15px;
+    position: relative;
+}
+
+.product_heading_wrapper {
+    height: 150px;
+}
+
+.product_heading_wrapper .product_heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 29px;
+    color: #1A1A1A;
+    padding: 0;
+}
+
+.product_details .writer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #1A1A1A;
+    padding: 0;
+}
+
+.ditails_product_price p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #1A1A1A;
+}
+
+.ditails_product_price p span {
+    font-weight: 700;
+}
 
