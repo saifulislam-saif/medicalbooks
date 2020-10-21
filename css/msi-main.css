@@ -524,3 +524,45 @@ footer .payment_method span {
     font-weight: 700;
 }
 
+.product_details_form,
+.product_details_btn {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 10px;
+    background: transparent;
+    border: 1px solid  #81C280;
+    line-height: 30px;
+    color: #81C280;
+    font-weight: 600;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+.product_details_form {
+    padding: 0;
+    overflow: hidden;
+}
+
+.product_details_form .input_field {
+    width: calc(100% - 70px);
+    margin: 0 10px;
+}
+
+.product_details_btn:hover {
+    border: 1px solid #fff;
+    color: #81C280;
+    box-shadow: 0 0 5px #81C280;
+}
+
+.product_details_form i {
+    background: #81C280;
+    width: 45px;
+    height: 50px;
+    font-size: 28px;
+    color: #fff;
+    transform: translateX(1px);
+}
+
